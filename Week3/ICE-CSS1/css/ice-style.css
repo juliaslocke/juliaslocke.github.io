@@ -6,7 +6,7 @@ html, body {
 	display: inline-block;
 }
 header h1 {
-	font-size: 35px;
+	font-size: 3em;
 	padding-top: 0;
 	margin-top: 0;
 	padding-bottom: 0;
@@ -40,8 +40,8 @@ nav ul li a{
 }
 aside {
 	width: 18%;
-	position: relative;
-	float: right;
+	position: absolute;
+	right: 0;
 	/*bottom: 0px;*/
 	background-color: white;
 	background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg");
@@ -55,19 +55,19 @@ aside h2 {
 	margin-top: 0;
 	padding-bottom: 0;
 	margin-bottom: 0;
-	font-size: 30px;
+	font-size: 2.25em;
 }
 aside ul {
 	padding-top: 0;
 	margin-top: 0;
 	padding-bottom: 0;
 	margin-bottom: 0;
-	padding-left: 50px;
+	padding-left: 30%;
 }
 
 aside ul li {
 	position: center;
-	font-size: 18px;
+	font-size: 1.3em;
 }
 #content {
 	width: 82%;
@@ -79,7 +79,7 @@ aside ul li {
 	margin-top: 0;
 }
 #content h1 {
-	font-size: 50px;
+	font-size: 3.5em;
 	padding-top: 0;
 	margin-top: 0;
 	padding-bottom: 0;
@@ -87,7 +87,7 @@ aside ul li {
 }
 
 #content p {
-	font-size: 23px;
+	font-size: 1.45em;
 	padding-top: 0;
 	margin-top: 0;
 	padding-bottom: 0;
@@ -95,7 +95,7 @@ aside ul li {
 	margin-right: 10%;
 }
 #content ul {
-	font-size: 23px;
+	font-size: 1.45em;
 	padding-top: 0;
 	margin-top: 0;
 	padding-bottom: 0;
@@ -112,7 +112,7 @@ footer {
 	bottom: 0;
 }
 footer p {
-	padding-left: 5px;
+	padding-left: 1%;
 	background-color: green;
-	font-size: 20px;
+	font-size: 1.25em;
 }

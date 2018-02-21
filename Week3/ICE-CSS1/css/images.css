@@ -1,0 +1,41 @@
+/*html, body {
+	box-sizing: border-box;
+}*/
+img {
+	display: inline-block;
+	height: 15%;
+	width: 15%;
+	margin: 5% 5% auto auto;
+	padding: 3%;
+	border: 3px solid black;
+}
+img:focus {
+	box-shadow: 0 0 3px rgba(81, 203, 238, 1);
+}
+.focus:focus {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+.hover:hover {
+	border-radius: 45%;
+}
+.active:active {
+	-webkit-filter: opacity(.5);
+	filter: opacity(.5);
+}
+.bar {
+	background: lightgray;
+	width: 99vw;
+	height: 10%;
+	position: absolute;
+	margin-left: auto;
+	margin-right: 5%;
+	margin-top: 10%;
+}
+.bar .square {
+	background: blue;
+	height: 1.5em;
+	width: 1.5em;
+	z-index: 5;
+	margin-top: 1.5%;
+}

@@ -18,8 +18,8 @@
 		float: right;
 		margin-right: 2%;
 	}
-		.photo-cell .skinny:after {
-			clear:all;
+	.photo-cell .skinny:after {
+		clear:all;
 	}
 }
 @media only screen and (min-width: 1000px) {
@@ -30,9 +30,30 @@
 		text-align: right;
 		margin-right: 2%;
 	}
-	.logo {
-		text-align: left;
+	.top-nav .logo img {
 		position: inline-block;
+		float: left;
 		padding-bottom: 0;
+	}
+	.top-nav .logo img:after {
+		clear: all;
+	}
+	.photo-grid {
+		margin: 0;
+		padding: 0;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.photo-cell {
+		box-sizing: border-box;
+		width: 48%;
+	}
+
+	div.skinny-cell {
+		width: 23%;
+	}
+	.photo-cell .skinny {
+		width: 100%;
 	}
 }
