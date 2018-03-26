@@ -1,34 +1,80 @@
-html, body {
+body {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 2fr auto auto 1fr;
+	grid-template-areas: "header header header"
+	"nav nav nav"
+	"education projectssection quote"
+	"footer footer footer";
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	width: 100%;
-	display: inline-block;
 }
+
 header {
+	grid-area: header;
 	color: white;
 	background-color: black;
-	height: 40%;
 	text-align: center;
-	position: relative;
-	top: 0;
-	left: 0;
-	right: 0;
 }
-header h1 {
+nav {
+	grid-area: nav;
+}
+nav ul {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "home projectsnav about contact";
 	margin: 0;
 	padding: 0;
-	font-size: 6em;
 }
-header h2 {
-	margin: 0;
-	padding: 0;
-	font-size: 2em;
+nav ul li {
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid lightblue;
 }
-.projects {
-	display: flex;
-	flex-flow: row wrap;
+nav ul li .home {
+	grid-area: home;
 }
-.project {
-	box-sizing: border-box;
+nav ul li .projects {
+	grid-area: projectsnav;
+}
+nav ul li .about {
+	grid-area: about;
+}
+nav ul li .contact {
+	grid-area: contact;
+}
+/*.name {
+	grid-area: name;
+}*/
+.education {
+	grid-area: education;
+}
+.projects_section {
+	grid-area: projectssection;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 2fr 2fr;
+	grid-template-areas: "projectshead projectshead projectshead";
+}
+.projects_section h4 {
+	grid-area: projectshead;
+	width: 100%;
+}
+.quote {
+	grid-area: quote;
+}
+footer {
+	grid-area: footer;
+	/*position: absolute;
+	bottom: 0;
+	top: auto;*/
+	bottom: 0;
+	top: auto;
+	background-color: black;
+	color: white;
+	width: 100%;
+}
+section, aside {
+	border: 2px solid black;
 }
