@@ -2,33 +2,43 @@
 <html lang="en">
   <head>
     <title>Julia Locke - Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="css/home-style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
 	<header>
+		<nav>
+			<ul>
+				<li class="home"><a href="https://juliaslocke.github.io/Portfolio/home.html"><i class="fas fa-home"></i> HOME</a></li>
+				<li class="projects"><a href="https://juliaslocke.github.io/Portfolio/projects.html"><i class="fas fa-pencil-alt"></i> PROJECTS</a></li>
+				<li class="about"><a href="https://juliaslocke.github.io/Portfolio/aboutme.html"><i class="fas fa-user"></i> ABOUT ME</a></li>
+				<li class="contact"><a href="https://juliaslocke.github.io/Portfolio/contact.html"><i class="fas fa-envelope"></i> CONTACT</a></li>
+			</ul>
+		</nav>
 		<h1>Julia Locke</h1>
 	</header>
-	<nav>
-		<ul>
-			<li>HOME</li>
-			<li>PROJECTS</li>
-			<li>ABOUT ME</li>
-			<li>CONTACT</li>
-		</ul>
-	</nav>
-	<div id = "name">
-		<h2>Julia Locke</h2>
-		<h3>- UMSI UX DESIGN -</h3>
+	<div class = "content">
+		<h4>Send me a message!</h4>
+		<form>
+			<legend>Type your message here:</legend>
+			<textarea rows="4" cols="50" name="message">Start Typing</textarea><br>
+			<input type="submit" name="submit" value="Send Message">
+		</form>
+		<div id = "thankyou">
+			<p>Thanks! Your message has been sent</p>
+			<i class="fas fa-check-circle"></i>
+			<br /><button>Send another message?</button>
+		</div>
 	</div>
-	<h4>Send me a message!</h4>
-	<form>
-		Type your message here:<br>
-		<textarea rows="4" cols="50" name="message">Start Typing</textarea><br>
-		<input type="submit" name="submit" value="Send Message">
-	</form>
+	<!-- <button id="resume">Check Out My Resume</button> -->
 	<footer>
-		<a href="linkedin.com/in/julia-locke-23763b111">LinkedIn</a>
+		<a href="linkedin.com/in/julia-locke-23763b111"><i class="fab fa-linkedin"></i></a>
+		<a href="#"><i class="fab fa-github-square"></i></a>
 	</footer>
 </body>
 </html>

@@ -5,52 +5,87 @@ html, body {
 	width: 100%;
 	display: inline-block;
 }
-header {
-	color: white;
-	background-color: black;
-	height: 40%;
-	text-align: center;
-	position: relative;
-	top: 0;
-	left: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
+h1 {
+	font-size: 2.5em;
 }
-header h1 {
-	margin: 0;
-	padding: 0;
-	font-size: 6em;
-}
-header h2 {
-	margin: 0;
-	padding: 0;
+h2 {
 	font-size: 2em;
 }
-nav ul {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
+h3 {
+	font-size: 1.75em;
+}
+h4 {
+	font-size: 1.5em;
+}
+h5 {
+	font-size: 1.17em;
+}
+header {
+	height: 35%;
+	background: radial-gradient(gray, black 75%);
+	display: block;
+}
+header h1 {
+	color: white;
 	text-align: center;
+	padding-top: 5%;
+	margin-top: 0;
+	padding-bottom: 1%;
+	margin-bottom: 0;
+}
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	background-color: white;
 }
 nav ul li {
-	display: inline-block;
-	font-size: 1.75em;
-	background-color: white;
 	border: 1px solid black;
-	border-radius: 5px;
-	margin: .1% 0;
-	padding: 0 7.5%;
-	height: 10%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
 }
-#projects {
-	display: -ms-flexbox;
-	display: flex;
-	flex-flow: row wrap;
+nav ul li a {
+	text-decoration: none;
+	color: black;
 }
-#projects h2 {
-	display: inline-block;
+@media only screen and (min-width: 650px) {
+	nav ul {
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "home projectsnav about contact";
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	nav ul li .home {
+		grid-area: home;
+	}
+	nav ul li .projects {
+		grid-area: projectsnav;
+	}
+	nav ul li .about {
+		grid-area: about;
+	}
+	nav ul li .contact {
+		grid-area: contact;
+	}
 }
-.project {
-	box-sizing: border-box;
+footer {
+	margin-bottom: 0;
+	position: fixed;
+	bottom: 0;
+	background-color: black;
+	color: white;
+	width: 100%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	text-align: center;
+}
+footer a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
 }

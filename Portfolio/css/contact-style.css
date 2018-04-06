@@ -1,0 +1,36 @@
+.content {
+	margin-bottom: 100px;
+}
+nav ul .contact {
+	background-color: #FF69B4;
+	text-decoration: underline;
+}
+h4 {
+	text-align: center;
+}
+form {
+	display: block;
+	border: 3px solid #FF69B4;
+	background-color: pink;
+	border-radius: 5px;
+	width: 50%;
+	height: 45%;
+	margin: auto;
+	text-align: center;
+}
+form textarea {
+	border-radius: 5px;
+	margin: 2%;
+	height: 60%;
+}
+#thankyou {
+	display: none;
+	border: 3px solid green;
+	background-color: lightgreen;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 1.25em;
+	padding: 2%;
+}

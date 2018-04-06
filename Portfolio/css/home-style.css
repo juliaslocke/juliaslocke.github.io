@@ -1,80 +1,132 @@
-body {
-	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 2fr auto auto 1fr;
-	grid-template-areas: "header header header"
-	"nav nav nav"
-	"education projectssection quote"
-	"footer footer footer";
-	margin: 0;
-	padding: 0;
+nav ul .home {
+	background-color: #FF69B4;
+	text-decoration: underline;
 }
-
-header {
-	grid-area: header;
-	color: white;
-	background-color: black;
+.name {
+	background-color: lightgray;
 	text-align: center;
 }
-nav {
-	grid-area: nav;
-}
-nav ul {
-	list-style: none;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-areas: "home projectsnav about contact";
+.name h2, .name h3 {
 	margin: 0;
-	padding: 0;
+	padding: 2% 0;
 }
-nav ul li {
-	text-align: center;
+aside {
+	background-color: pink;
 	border-radius: 5px;
-	border: 1px solid lightblue;
-}
-nav ul li .home {
-	grid-area: home;
-}
-nav ul li .projects {
-	grid-area: projectsnav;
-}
-nav ul li .about {
-	grid-area: about;
-}
-nav ul li .contact {
-	grid-area: contact;
-}
-/*.name {
-	grid-area: name;
-}*/
-.education {
-	grid-area: education;
-}
-.projects_section {
-	grid-area: projectssection;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr 2fr 2fr;
-	grid-template-areas: "projectshead projectshead projectshead";
-}
-.projects_section h4 {
-	grid-area: projectshead;
-	width: 100%;
+	border: 2px solid #FF69B4;
+	margin: 1% 2%;
+	padding: 0 5%;
 }
 .quote {
-	grid-area: quote;
+	margin: 5%;
+	text-align: center;
+	border-radius: 5px;
 }
-footer {
-	grid-area: footer;
-	/*position: absolute;
-	bottom: 0;
-	top: auto;*/
-	bottom: 0;
-	top: auto;
-	background-color: black;
-	color: white;
-	width: 100%;
+.quote p {
+	padding-bottom: 5%
 }
-section, aside {
-	border: 2px solid black;
+.projects_section {
+	display: none;
+}
+.education {
+	display: none;
+}
+@media only screen and (min-width: 650px) {
+	body {
+		background-color: none;
+	}
+	.content {
+		margin-bottom: 100px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: "name name name"
+		"education projectssection quote";
+	}
+	.content .name {
+		grid-area: name;
+	}
+	.content .education {
+		display: inline-block;
+		grid-area: education;
+		margin: 0;
+	}
+	.education h4 {
+		text-align: center;
+	}
+	.content .projects_section {
+		grid-area: projectssection;
+		display: inline-block;
+		margin: 0;
+	}
+	.projects_section h4 {
+		text-align: center;
+	}
+	.projects_section ul {
+		list-style: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	.content .quote {
+		grid-area: quote;
+		border: none;
+		margin: 0;
+	}
+	section, aside {
+		height: 100%;
+	}
+	aside {
+		background-color: #FF69B4;
+		border-radius: 5px;
+		/*border: 2px solid black;*/
+		margin: 1% 2%;
+		padding: 0 5%;
+	}
+	section {
+		margin: 1% 2%;
+		border-radius: 5px;
+		background-color: pink;
+	}
+}
+@media only screen and (min-width: 1000px) {
+	.content {
+		margin-bottom: 80px;
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-areas: "name name name"
+		"education projectssection quote";
+	}
+	.content .name {
+		grid-area: name;
+	}
+	.content .education {
+		display: inline-block;
+		grid-area: education;
+	}
+	.content .projects_section {
+		grid-area: projectssection;
+		display: inline-block;
+	}
+	.projects_section h4 {
+		width: 100%;
+		text-align: center;
+	}
+	.content .quote {
+		grid-area: quote;
+	}
+	section, aside {
+		height: 100%;
+	}
+	aside {
+		background-color: #FF69B4;
+		border-radius: 5px;
+		/*border: 2px solid black;*/
+		margin: 1% 2%;
+		padding: 0 5%;
+	}
+	section {
+		margin: 1% 2%;
+		border-radius: 5px;
+		background-color: pink;
+	}
 }

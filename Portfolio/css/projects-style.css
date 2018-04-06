@@ -1,0 +1,21 @@
+/*#projects {
+	display: inline-block;
+}*/
+nav ul .projects {
+	background-color: #FF69B4;
+	text-decoration: underline;
+}
+.project {
+	background: white;
+	border: 3px solid black;
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+	width: 75%;
+}
+.project p {
+	visibility: hidden;
+}
+#projects {
+	margin-bottom: 100px;
+}
