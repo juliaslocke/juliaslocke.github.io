@@ -4,11 +4,23 @@
     <title>Julia Locke - Contact Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/contact-style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('#submit').on('submit', function(){
+				$('.form').css("display", "none");
+				$('#thankyou').css("display", "block")
+			})
+			$('.newmsg').on('click', function(){
+				$('#thankyou').css("display", "none");
+				$('.form').css("display", "block");
+			})
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -24,21 +36,22 @@
 	</header>
 	<div class = "content">
 		<h4>Send me a message!</h4>
-		<form>
+		<p>Hi! I would love to hear from you! Send me a message below, or feel free to email me directly at jullocke@umich.edu . Thanks!</p>
+		<form class="form">
 			<legend>Type your message here:</legend>
 			<textarea rows="4" cols="50" name="message">Start Typing</textarea><br>
-			<input type="submit" name="submit" value="Send Message">
+			<input type="submit" name="submit" id="submit" value="Send Message">
 		</form>
 		<div id = "thankyou">
 			<p>Thanks! Your message has been sent</p>
 			<i class="fas fa-check-circle"></i>
-			<br /><button>Send another message?</button>
+			<br /><button id="newmsg">Send another message?</button>
 		</div>
 	</div>
 	<!-- <button id="resume">Check Out My Resume</button> -->
 	<footer>
 		<a href="linkedin.com/in/julia-locke-23763b111"><i class="fab fa-linkedin"></i></a>
-		<a href="#"><i class="fab fa-github-square"></i></a>
+		<a href="https://github.com/juliaslocke"><i class="fab fa-github-square"></i></a>
 	</footer>
 </body>
 </html>

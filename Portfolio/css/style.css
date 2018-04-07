@@ -4,6 +4,7 @@ html, body {
 	height: 100%;
 	width: 100%;
 	display: inline-block;
+	font-family: 'Lato', sans-serif;
 }
 h1 {
 	font-size: 2.5em;
@@ -19,6 +20,9 @@ h4 {
 }
 h5 {
 	font-size: 1.17em;
+}
+h6 {
+	font-size: 1.11em;
 }
 header {
 	height: 35%;
