@@ -9,18 +9,18 @@
     <link rel="stylesheet" type="text/css" href="css/contact-style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-		$(document).ready(function(){
-			$('#submit').on('submit', function(){
-				$('.form').css("display", "none");
-				$('#thankyou').css("display", "block")
-			})
-			$('.newmsg').on('click', function(){
-				$('#thankyou').css("display", "none");
-				$('.form').css("display", "block");
-			})
-		});
-	</script>
+ //    <script>
+	// 	$(document).ready(function(){
+	// 		$('#submit').on('submit', function(){
+	// 			$('.form').css("display", "none");
+	// 			$('#thankyou').css("display", "block")
+	// 		})
+	// 		$('.newmsg').on('click', function(){
+	// 			$('#thankyou').css("display", "none");
+	// 			$('.form').css("display", "block");
+	// 		})
+	// 	});
+	// </script>
 </head>
 <body>
 	<header>
@@ -38,7 +38,7 @@
 		<h4>Send me a message!</h4>
 		<p>Hi! I would love to hear from you! Send me a message below, or feel free to email me directly at jullocke@umich.edu . Thanks!</p>
 		<form class="form">
-			<legend>Type your message here:</legend>
+			<label>Type your message here:</label>
 			<textarea rows="4" cols="50" name="message">Start Typing</textarea><br>
 			<input type="submit" name="submit" id="submit" value="Send Message">
 		</form>
@@ -50,8 +50,8 @@
 	</div>
 	<!-- <button id="resume">Check Out My Resume</button> -->
 	<footer>
-		<a href="linkedin.com/in/julia-locke-23763b111"><i class="fab fa-linkedin"></i></a>
-		<a href="https://github.com/juliaslocke"><i class="fab fa-github-square"></i></a>
+		<a href="https://www.linkedin.com/in/julia-locke-23763b111" target="_blank"><i class="fab fa-linkedin" aria-label="LinkedIn"></i></a>
+		<a href="https://github.com/juliaslocke" target="_blank"><i class="fab fa-github-square" aria-label="GitHub"></i></a>
 	</footer>
 </body>
 </html>
