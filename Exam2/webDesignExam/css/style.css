@@ -1,0 +1,7 @@
+img {
+	display: inline-block;
+	width: 38%;
+	border: 5px solid blue;
+	margin: 0;
+	padding: 5%;
+}
